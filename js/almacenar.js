@@ -4,8 +4,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const addButton = document.getElementById("agregar");
     const clearButton = document.getElementById("limpiar");
     const contenedor = document.getElementById("contenedor");
-  
-    // Cargar los ítems almacenados previamente al cargar la página
+    
     const storedItems = JSON.parse(localStorage.getItem("items")) || [];
     updateList(storedItems);
   
